@@ -33,7 +33,7 @@ if(!Array.isArray(slides) || slides.length <= 0){
              <FaArrowCircleLeft onClick={()=> prevSlide()} size={50} className=' absolute top-[50%] 
              left-[30px] text-white/70 cursor-pointer select-none z-[2]'/>
                {
-                index === current && (<Image src={item.image} width='1440' height='600' 
+                index === current && (<Image src={item.image} alt='image' width='1440' height='600' 
                 objectFit='cover' className=' rounded-xl h-[600px] object-cover shadow-xl'/>)
                }     
                <FaArrowCircleRight onClick={()=> nextSlide()} size={50} className=' absolute top-[50%] 
