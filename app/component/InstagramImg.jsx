@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import {FaInstagram} from 'react-icons/fa'
+
 
 const InstagramImg = ({socialImg}) => {
   return (
@@ -9,9 +9,9 @@ const InstagramImg = ({socialImg}) => {
         {
             socialImg.map((item, index) =>{
                 return ( 
-                      <div >
+                      <div key={index} >
                     <Image src={item.image} width={800}
-                     height={600} className=' w-full h-full rounded-xl  hover:scale-95 
+                     height={600} alt='images' className=' w-full h-full rounded-xl  hover:scale-95 
                        hover:opacity-50 ease-in-out duration-300' layout='responsive'/>
                      
                     
